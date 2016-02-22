@@ -37,6 +37,7 @@ gem 'sprockets', '2.11.0'
 gem 'sass-rails'
 gem 'devise', '>= 3.2.4'
 gem 'simple_form'
+gem 'carrierwave'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
