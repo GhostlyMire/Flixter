@@ -1,6 +1,6 @@
 class CoursesController < ApplicationController
   before_action :authenticate_user!
-  before_action :require_authorized_for_current_course, only: [:show]
+  # before_action :require_authorized_for_current_course, only: [:show]
 
   def new
     @course = Course.new
@@ -18,6 +18,10 @@ class CoursesController < ApplicationController
   def show
     @course = Course.find(params[:id])
   end
+
+  def index
+    @courses = Course.all
+  end  
 
   private
   def require_authorized_for_current_course
